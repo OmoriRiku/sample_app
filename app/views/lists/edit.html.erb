@@ -7,6 +7,9 @@
     <h2>本文</h2>
     <%= f.text_area :body %>
     
-    <%= f.submit '投稿' %>
+    <h2>画像</h2>
+    <p><%= f.file_field :image, accept: 'image/*'%></p>
+    
+    <p><%= f.submit '投稿' %></p>
     
 <% end %>
